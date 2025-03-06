@@ -1,0 +1,29 @@
+{
+  "name": "popover-anchor",
+  "version": "1.0.0",
+  "description": "An example of using popover and CSS anchor positioning.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prettier:lint": "prettier .",
+    "prettier:format": "prettier --write .",
+    "lint:css": "stylelint **/*.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/schalkneethling/popover-anchor.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/schalkneethling/popover-anchor/issues"
+  },
+  "homepage": "https://github.com/schalkneethling/popover-anchor#readme",
+  "devDependencies": {
+    "prettier": "^3.5.3",
+    "stylelint": "^16.15.0",
+    "stylelint-config-standard": "^37.0.0",
+    "stylelint-order": "^6.0.4"
+  }
+}

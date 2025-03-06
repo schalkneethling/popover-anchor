@@ -1,0 +1,36 @@
+/* stylelint-disable declaration-property-value-no-unknown */
+.trigger {
+  anchor-name: --flyout;
+  width: fit-content;
+}
+
+.options {
+  list-style: none;
+  margin: 0;
+  padding: 1rem;
+}
+
+.options:popover-open {
+  background-color: #fff;
+  border: 0.125rem solid #212121;
+  color: #212121;
+  display: grid;
+  gap: 1rem;
+  inline-size: max-content;
+  left: anchor(--flyout end);
+  position: fixed;
+  position-anchor: --flyout;
+  top: anchor(--flyout start);
+}
+
+.anchor-support {
+  display: none;
+}
+
+@supports not (inset: anchor(--flyout start)) {
+  .anchor-support {
+    display: block;
+    line-height: 1.75;
+    max-inline-size: 110ch;
+  }
+}
