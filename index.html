@@ -16,14 +16,13 @@
 
   <button class="trigger" popovertarget="options" type="button">Click for options</button>
 
-  <ul id="options" class="options" popover>
+  <ul id="options" class="options options-absolute" popover>
     <li><a href="/all">View all</a></li>
     <li><a href="/front">Front View</a></li>
     <li><a href="/side">Side View</a></li>
   </ul>
 
   <script type="module">
-
     const enablePolyfill = document.getElementById('enable-polyfill');
     enablePolyfill.addEventListener('click', async () => {
       const { default: polyfill } = await import('https://unpkg.com/@oddbird/css-anchor-positioning/dist/css-anchor-positioning-fn.js');
