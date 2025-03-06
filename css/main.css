@@ -1,4 +1,9 @@
 /* stylelint-disable declaration-property-value-no-unknown */
+body {
+  display: grid;
+  place-items: end;
+}
+
 .trigger {
   anchor-name: --flyout;
   width: fit-content;
@@ -13,12 +18,12 @@
 .options-area {
   position-anchor: --flyout;
   position-area: inline-end span-block-end;
+  position-try: flip-inline;
 }
 
 .options-absolute {
   left: anchor(--flyout end);
   position: absolute;
-  position-area: unset;
   top: anchor(--flyout start);
 }
 
@@ -26,7 +31,6 @@
   inset-block: anchor(--flyout start);
   inset-inline: anchor(--flyout end);
   position: fixed;
-  position-area: unset;
 }
 
 .options:popover-open {
