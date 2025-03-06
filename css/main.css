@@ -17,10 +17,22 @@
   display: grid;
   gap: 1rem;
   inline-size: max-content;
-  left: anchor(--flyout end);
-  position: fixed;
   position-anchor: --flyout;
+  position-area: inline-end span-block-end;
+}
+
+.options-absolute:popover-open {
+  left: anchor(--flyout end);
+  position: absolute;
+  position-area: unset;
   top: anchor(--flyout start);
+}
+
+.options-inset:popover-open {
+  inset-block: anchor(--flyout start);
+  inset-inline: anchor(--flyout end);
+  position: fixed;
+  position-area: unset;
 }
 
 .anchor-support {
